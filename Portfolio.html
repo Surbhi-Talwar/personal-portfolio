@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.navbar{
+			display: flex;
+			margin-top: 10px;
+			align-items: center;
+			background-color: black;
+		}
+		.logo{
+			padding-right: 250px;
+			padding-left: 80px;
+			font-size: 40px;
+			font-family: cursive;
+			color: hotpink;
+			margin-left: 10px;
+		}
+		
+		.navbar a{
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+			font-size: 20px;
+		}
+		.navbar a:hover{
+			color: pink;
+			font-size: 22px;
+		}
+		.nav-links{
+			text-decoration: none;
+			list-style: none;
+			display: flex;
+			gap: 40px;
+		}
+		.i img{
+			width: 450px;
+			height: 400px;
+			padding-top: 40px;
+			margin-right: 100px;
+			margin-left: 40px;
+			border-radius: 200px;
+			border: 4px solid purple;
+			position: relative;
+			animation: slideInRight 3s  ease-out forwards;
+		}
+		@keyframes slideInRight{
+				from {
+					transform: translate(-100px0);
+					opacity: 0;
+			}
+				to {
+					transform: translate(0);
+					opacity: 1;
+				}
+			}
+		.intro h1{
+			text-align: Left;
+			font-size: 34px;
+			margin-top: 0px;
+			margin-left: 50px;
+			font-family: Cursive;
+		}
+		.intro p{
+			margin-top: 30px;
+			margin-right: 80px;
+			margin-left: 50px;
+			text-align: justify;
+			font-size: 22px;
+			margin-bottom: 0px;
+		}	
+		.intro{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 30px;
+			padding:20px;	
+		}
+		.image-text img{
+			width: 30px;
+			height: 30px;
+			padding-top: 5px;
+			margin-right: 0px;
+			margin-left: 5px;
+		}
+		.buttons{
+			margin-top: 20px;
+			margin-left: 50px;
+
+		}
+		.btn{
+			margin-right: 50px;
+			color: white;
+			background-color: rebeccapurple;
+			border-radius: 5px;
+			font-size: 22px;
+			border-color: black;
+
+		}
+/*		Proficiecy*/
+		.Contact{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 30px;
+			padding:20px;
+			margin-left: 0px;
+			margin-bottom: 170px;
+			margin-top: 200px;
+			background-color: navajowhite;
+		}
+		.Contact-text img{
+			width: 30px;
+			height: 30px;
+			padding-top: 5px;
+			margin-right: 0px;
+			margin-left: 5px;
+		}
+		.tag{
+			font-size: 54px;
+			color: purple;
+			margin-top: 0px;
+			margin-bottom: 30px;
+			text-align: center;
+		}
+		.Contact-text{
+			text-align: left;
+			margin-left: 0px;
+		}
+
+		.head{
+			font-size: 34px;
+			text-align: center;
+		}
+		.bar{
+			background-color: #eee;
+			border-radius: 10px;
+			overflow: hidden;
+			height: 10px;
+		}
+		.Achievements{
+			display: flex;
+			align-items: center;
+			gap: 20px;
+		}
+		.solo, .solo2, .solo3{
+			margin-left: 60px;
+			margin-right: 20px;
+			border-radius: 60px;
+			border-style: solid;
+			border-color: purple;
+			margin-bottom: 20px;
+		}
+	
+		.solo4{
+			margin-left: 60px;
+			margin-right: 20px;
+			border-radius: 60px;
+			border-style: solid;
+			border-color: purple;
+			margin-top: 20px;	
+		}
+		
+		.techskills,.Otherskills {
+			margin-top: 60px;
+			margin-bottom: 60px;
+			margin-left: 100px;
+			margin-right: 100px;
+			width: 1000px;
+			height: 220px;
+			border: 5px solid purple;
+			border-radius: 30px;
+			padding-left: 50px;
+
+			font-size: 30px;
+			animation-name: colorchange;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes slideIn{
+			
+		}
+		.techskills h3,.Otherskills h3 {
+			text-align: center;
+			color: pink;
+		}
+		
+		@keyframes colorchange{
+			0%{
+				border-color: Purple;
+			}
+			50%{
+				border-color: skyblue;
+			}
+			100%{
+				border-color: yellow;
+			}
+		}
+		@media (max-width: 768px) {
+		      .intro,
+		      .Contact,
+		      .Achievements {
+		        flex-direction: column;
+		        align-items: center;
+		      }
+				.i img{
+					width:350px;
+					height: 300px;
+					padding-top: 40px;
+					margin-right: 50px;
+					margin-left: 50px;
+				}
+		      .logo {
+		        font-size: 24px;
+		      }
+
+		      .nav-links {
+		        flex-direction: column;
+		        gap: 10px;
+		        align-items: left;
+		        margin-top: 10px;
+		        font-size: 14px;
+		      }
+
+		      .btn {
+		        font-size: 16px;
+		      }
+
+		      .techskills,
+		      .Otherskills {
+		        margin: 20px;
+		        padding: 15px;
+		        width: 80%;
+		        height: 80%;
+		      }
+		    }
+		    @media (max-width: 480px) {
+      .image-text h1 {
+        font-size: 22px;
+      }
+      .solo, .solo2, .solo3{
+      	width: 100%;
+      	height: 100%px;
+      	margin: 20px;
+
+      }
+      .image-text p,
+      .text,
+      .text2,
+      .text3,
+      .text4 {
+        font-size: 14px;
+        
+        margin: 20px;
+      }
+
+      .btn {
+        width: 75%;
+        margin-bottom: 10px;
+      }
+    }
+	</style>
+	<script type="text/javascript">
+		window.onload=function(){
+			window.scrollTo(0,0);
+		};
+	</script>
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="logo">SURBHI TALWAR</div>
+			<ul class="nav-links">
+				<li><a href="#Skills">Skills</a></li>
+				<li><a href="#Achievements">Achievements</a></li>
+				<li><a href="#Contact Me">Contact Me</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="intro">
+		<div class="image-text">
+			<h1>Hi all I'm Surbhi <span class="Wave">👋</span></h1>
+			<p>"Hey! I'm a final-year BCA student who loves turning ideas into interactive web pages. I'm passionate about frontend development and enjoy working with HTML, CSS, Bootstrap, and JavaScript. I'm also exploring Python to expand my coding skills and build dynamic applications."</p>
+			<img src="images/telegram.png" style="margin-left: 50px;">
+			<img src="images/whatsapp.png">
+			<img src="images/linkedin.png">
+			<img src="images/communication.png"><br>
+			<br>
+			<div class="buttons">
+				<button class="btn" onclick="location.href='#Contact Me'">Contact Me</button>
+				<button class="btn Second" onclick="location.href='resume.html'">See My Resume</button>
+			</div>
+		</div>		
+		<div class=i><img src="images/su.jpg"></div>
+	</section>
+</body>
+
+<!-- Skills -->
+<a name="Skills"></a>
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="techskills">
+			<div class="box1"><h3>Technical Skills</h3></div>
+			<div class="1"><p> HTML5, CSS3, Javascript</p></div>
+			<div class="2"><p> Bootstrap</p></div>
+			<div class="3"><p> Python With Django</p></div>
+			<div class="4"><p> MySQL</p></div>
+		</div>
+		<div class="Otherskills">
+			<div class="box2"><h3>Other  Skills</h3></div>
+			<div class="1"><p> Microsoft Word</p></div>
+			<div class="2"><p> Microsoft Excel</p></div>
+			<div class="3"><p> Microsoft Powerpoint</p></div>
+			<div class="4"><p> VS Code Editor</p></div>
+			<div class="4"><p> Sublime Code Editor</p></div>
+		</div>
+	</div>
+</div>
+</body>
+<!-- Achievements Section --><a name="Achievements"></a>
+<body><center><h1 class="heading">Achievements</h1></center>
+<div class="Achievements">
+
+		<a href="images/techforE.jpg" target="_blank">
+			<img src="images/techforE.jpg" style="width: 350px; height: 300px;" class="solo">
+		</a>
+		<a href="images/pd.jpg" target="_blank">
+			<img src="images/pd.jpg" style="width: 350px; height: 300px;" class="solo2">
+		</a>
+
+		<a href="images/WD.jpg" target="_blank">	
+			<img src="images/WD.jpg" style="width: 350px; height: 300px;" class="solo3">
+		</a>
+</div>
+<div class="Achievements">
+		<a href="images/pi.jpg" target="_blank">
+			<img src="images/pi.jpg" style="width: 350px; height: 300px;" class="solo4" >
+		</a>
+</div>
+</body>
+<!-- Contact Section -->
+<body>
+<div class="Contact"><a name="Contact Me">
+		<div class="tag">Contact Me</div>
+	<div class="Contact-text">
+			<h1>Reach Out to me!</h1>
+			<p>A good Speaker🎤| Listener| Strong Personality| Web developer</p>
+			<p>Live in Amritsar, Punjab, India.</p>
+			<h3><strong>Open for Oppurtunities:</strong>Yes</h3>
+			<img src="images/telegram.png" style="margin-left: 50px;">
+			<img src="images/whatsapp.png">
+			<img src="images/linkedin.png">
+			<img src="images/communication.png">
+	</div>
+	
+</div>
+</body>
+</html>
