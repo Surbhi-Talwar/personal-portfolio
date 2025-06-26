@@ -1,0 +1,261 @@
+	*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.navbar{
+			display: flex;
+			margin-top: 10px;
+			align-items: center;
+			background-color: black;
+		}
+		.logo{
+			padding-right: 250px;
+			padding-left: 80px;
+			font-size: 40px;
+			font-family: cursive;
+			color: hotpink;
+			margin-left: 10px;
+		}
+		
+		.navbar a{
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+			font-size: 20px;
+		}
+		.navbar a:hover{
+			color: pink;
+			font-size: 22px;
+		}
+		.nav-links{
+			text-decoration: none;
+			list-style: none;
+			display: flex;
+			gap: 40px;
+		}
+		.i img{
+			width: 450px;
+			height: 400px;
+			padding-top: 40px;
+			margin-right: 100px;
+			margin-left: 40px;
+			border-radius: 200px;
+			border: 4px solid purple;
+			position: relative;
+			animation: slideInRight 3s  ease-out forwards;
+		}
+		@keyframes slideInRight{
+				from {
+					transform: translate(-100px0);
+					opacity: 0;
+			}
+				to {
+					transform: translate(0);
+					opacity: 1;
+				}
+			}
+		.intro h1{
+			text-align: Left;
+			font-size: 34px;
+			margin-top: 0px;
+			margin-left: 50px;
+			font-family: Cursive;
+		}
+		.intro p{
+			margin-top: 30px;
+			margin-right: 80px;
+			margin-left: 50px;
+			text-align: justify;
+			font-size: 22px;
+			margin-bottom: 0px;
+		}	
+		.intro{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 30px;
+			padding:20px;	
+		}
+		.image-text img{
+			width: 30px;
+			height: 30px;
+			padding-top: 5px;
+			margin-right: 0px;
+			margin-left: 5px;
+		}
+		.buttons{
+			margin-top: 20px;
+			margin-left: 50px;
+
+		}
+		.btn{
+			margin-right: 50px;
+			color: white;
+			background-color: rebeccapurple;
+			border-radius: 5px;
+			font-size: 22px;
+			border-color: black;
+
+		}
+/*		Proficiecy*/
+		.Contact{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 30px;
+			padding:20px;
+			margin-left: 0px;
+			margin-bottom: 170px;
+			margin-top: 200px;
+			background-color: navajowhite;
+		}
+		.Contact-text img{
+			width: 30px;
+			height: 30px;
+			padding-top: 5px;
+			margin-right: 0px;
+			margin-left: 5px;
+		}
+		.tag{
+			font-size: 54px;
+			color: purple;
+			margin-top: 0px;
+			margin-bottom: 30px;
+			text-align: center;
+		}
+		.Contact-text{
+			text-align: left;
+			margin-left: 0px;
+		}
+
+		.head{
+			font-size: 34px;
+			text-align: center;
+		}
+		.bar{
+			background-color: #eee;
+			border-radius: 10px;
+			overflow: hidden;
+			height: 10px;
+		}
+		.Achievements{
+			display: flex;
+			align-items: center;
+			gap: 20px;
+		}
+		.solo, .solo2, .solo3{
+			margin-left: 60px;
+			margin-right: 20px;
+			border-radius: 60px;
+			border-style: solid;
+			border-color: purple;
+			margin-bottom: 20px;
+		}
+	
+		.solo4{
+			margin-left: 60px;
+			margin-right: 20px;
+			border-radius: 60px;
+			border-style: solid;
+			border-color: purple;
+			margin-top: 20px;	
+		}
+		
+		.techskills,.Otherskills {
+			margin-top: 60px;
+			margin-bottom: 60px;
+			margin-left: 100px;
+			margin-right: 100px;
+			width: 1000px;
+			height: 220px;
+			border: 5px solid purple;
+			border-radius: 30px;
+			padding-left: 50px;
+
+			font-size: 30px;
+			animation-name: colorchange;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes slideIn{
+			
+		}
+		.techskills h3,.Otherskills h3 {
+			text-align: center;
+			color: pink;
+		}
+		
+		@keyframes colorchange{
+			0%{
+				border-color: Purple;
+			}
+			50%{
+				border-color: skyblue;
+			}
+			100%{
+				border-color: yellow;
+			}
+		}
+		@media (max-width: 768px) {
+		      .intro,
+		      .Contact,
+		      .Achievements {
+		        flex-direction: column;
+		        align-items: center;
+		      }
+				.i img{
+					width:350px;
+					height: 300px;
+					padding-top: 40px;
+					margin-right: 50px;
+					margin-left: 50px;
+				}
+		      .logo {
+		        font-size: 24px;
+		      }
+
+		      .nav-links {
+		        flex-direction: column;
+		        gap: 10px;
+		        align-items: left;
+		        margin-top: 10px;
+		        font-size: 14px;
+		      }
+
+		      .btn {
+		        font-size: 16px;
+		      }
+
+		      .techskills,
+		      .Otherskills {
+		        margin: 20px;
+		        padding: 15px;
+		        width: 80%;
+		        height: 80%;
+		      }
+		    }
+		    @media (max-width: 480px) {
+      .image-text h1 {
+        font-size: 22px;
+      }
+      .solo, .solo2, .solo3{
+      	width: 100%;
+      	height: 100%px;
+      	margin: 20px;
+
+      }
+      .image-text p,
+      .text,
+      .text2,
+      .text3,
+      .text4 {
+        font-size: 14px;
+        
+        margin: 20px;
+      }
+
+      .btn {
+        width: 75%;
+        margin-bottom: 10px;
+      }
+    }
