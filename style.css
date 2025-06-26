@@ -75,6 +75,7 @@
 			justify-content: center;
 			gap: 30px;
 			padding:20px;	
+			text-decoration: none;
 		}
 		.image-text img{
 			width: 30px;
